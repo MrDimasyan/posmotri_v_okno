@@ -117,22 +117,19 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
-  vertical-align: middle;
   border: 1px solid white;
-  background-color: transparent;
 }
 
-input[type='checkbox']:checked + span::before {
+input[type='checkbox']:checked + span:after {
   content: '';
-  position: absolute;
-  margin: 1px;
   width: 15px;
   height: 15px;
-  background-color: #fff;
+  background: white;
 }
 
 .search-form__textfield {
@@ -239,10 +236,6 @@ input[type='checkbox']:checked + span::before {
 }
 
 /* active */
-
-.search-form__label:active {
-  outline: 1px solid #fff;
-}
 
 .button:active,
 .content__card-link:active {
